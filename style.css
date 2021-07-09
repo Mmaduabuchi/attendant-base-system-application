@@ -102,3 +102,41 @@
 .access-row-div{
     margin-top: 10%;
 }
+.menu-drop-side-div{
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--bs-dark);
+    width: 100%;
+}
+.menu-drop-side-div:hover{
+    background-color: white;
+    color: black;
+}
+.menu-wrapper{
+    display: none;
+}
+.menu-container{
+    width: 60%;
+}
+.menu-drop-side-holder{
+    padding: 0.8rem;
+    background-color: var(--bs-primary);
+    color: white;
+    cursor: pointer;
+}
+/* .menu-drop-side-holder:hover{
+    background-color: rgb(57, 57, 58);
+} */
+
+.admin-header{
+    background: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+#app-name{
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
