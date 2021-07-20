@@ -40,6 +40,13 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
+.password{
+    border: none;
+    border-bottom: 4px solid rgb(4, 150, 150);
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 .btn-log{
     width: 50%;
     padding: 1rem;

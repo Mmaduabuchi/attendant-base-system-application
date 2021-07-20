@@ -37,13 +37,13 @@
         <div class="user-font-holder">
           <i class="fa fa-user fa-5x"></i>
         </div>
-        <form action="" name="form" method="POST" class="form">
+        <form name="form" enctype="multipart/form-data" class="form">
           <br><br>
           <p>Email:</p>
-          <input type="email" name="email" class="username" required>
+          <input type="email" name="email" class="email" required>
           <br><br>
           <p>Password:</p>
-          <input type="password" name="password" class="email" required>
+          <input type="password" maxlength="25" minlength="5" name="password" class="password" required>
           <br><br>
           <input type="submit" name="submit" id="snap" value="Log In" class="btn btn-primary text-center text-white btn-log">
         </form>

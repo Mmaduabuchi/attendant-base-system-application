@@ -66,3 +66,25 @@ function updateOnlineStatus () {
   window.addEventListener('offline', updateOnlineStatus)
   
   updateOnlineStatus();
+
+
+  document.getElementsByClassName("form")[0].addEventListener('onsubmit', (evt)=> {
+    evt.preventDefault();
+    var email = document.querySelector(".email");
+    var password = document.querySelector(".password");
+    console.log(email, password);
+    if(email.value && password.value){
+        fetch(
+
+            "http://*.localhost:3000/submit",
+            {   method: "post",
+                mode: "cors",
+                cache: 'no-cache',
+                credentials: 'include',
+                headers: {"Content-Type": "application/json"}, 
+                body: JSON.stringify({email, password}) 
+            }
+            
+        )
+    }
+  })
