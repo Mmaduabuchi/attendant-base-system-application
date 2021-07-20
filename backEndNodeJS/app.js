@@ -33,6 +33,11 @@ app.post('/submit', (req, res)=>{
 
 });
 
+app.get('/test', (req, res) => {
+    res.status(200).send({Data:"Hello"});
+    console.log('Requested')
+})
+
 //listen to the network port
 app.listen(3000, () =>{
 

@@ -68,18 +68,15 @@ function updateOnlineStatus () {
   updateOnlineStatus();
 
 
-  document.getElementsByClassName("form")[0].addEventListener('onsubmit', (evt)=> {
+  document.querySelector(".form").addEventListener('submit', (evt)=> {
     evt.preventDefault();
-    var email = document.querySelector(".email");
-    var password = document.querySelector(".password");
-    console.log(email, password);
-    if(email.value && password.value){
+    var email = document.querySelector(".email").value;
+    var password = document.querySelector(".password").value;
+    if(email && password){
         fetch(
 
-            "http://*.localhost:3000/submit",
+            "http://localhost:3000/submit",
             {   method: "post",
-                mode: "cors",
-                cache: 'no-cache',
                 credentials: 'include',
                 headers: {"Content-Type": "application/json"}, 
                 body: JSON.stringify({email, password}) 

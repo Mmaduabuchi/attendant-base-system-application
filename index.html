@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">    
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -40,10 +38,10 @@
         <form name="form" enctype="multipart/form-data" class="form">
           <br><br>
           <p>Email:</p>
-          <input type="email" name="email" class="email" required>
+          <input type="email" name="email" value="d@d.vcom" class="email" required>
           <br><br>
           <p>Password:</p>
-          <input type="password" maxlength="25" minlength="5" name="password" class="password" required>
+          <input type="password" maxlength="25" value="qqqqqqqqqqqqq" minlength="5" name="password" class="password" required>
           <br><br>
           <input type="submit" name="submit" id="snap" value="Log In" class="btn btn-primary text-center text-white btn-log">
         </form>

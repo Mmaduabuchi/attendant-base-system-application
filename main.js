@@ -9,7 +9,7 @@ function createWindow () {
     height: 800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      webSecurity: false,
+      webSecurity: true,
     }
   })
 
@@ -32,8 +32,6 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 })
-
-app.commandLine.appendSwitch('disable-features','OutOfBlinkCors')
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
